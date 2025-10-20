@@ -6,11 +6,13 @@ import CV from './Components/CV'
 import ProjectByIdPage from './Components/ProjectByIdPage'
 import ErrorPage from './Components/ErrorPage'
 import './App.css'
+import Header from './Components/Header'
 
 function App() {
   return (
     <Router basename="/portfolio">
       <div className="App">
+        <Header/>
         <main>
           <Routes>
             <Route path="/" element={<Home />} />

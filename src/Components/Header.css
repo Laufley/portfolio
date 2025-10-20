@@ -1,20 +1,45 @@
-header {
-  padding: 1rem 0;
-  border-bottom: 1px solid #333;
-}
-
-nav {
+#nav {
   display: flex;
   gap: 2rem;
   justify-content: center;
+  padding: 1rem 0;
+  background: linear-gradient(90deg, #de3274, #ba5ee2, #4e9aec, #67e2b5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-nav a {
+#nav a {
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
 }
 
-nav a:hover {
-  background-color: rgba(100, 108, 255, 0.1);
+#nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+body {
+  background: repeating-linear-gradient(45deg, #ffffff, #f87171, #ba5ee2, #4e9aec, #67e2b5, #40eeb7);
+  background-size: 400% 400%;
+  animation: gradient 18s ease infinite;
+  height: fit-content;
+  margin: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

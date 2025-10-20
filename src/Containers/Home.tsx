@@ -1,6 +1,4 @@
-import React from 'react';
 import './Home.css';
-import Header from '../Components/Header';
 import { Link } from 'react-router-dom';
 import profile_pic from '../Components/Assets/profile_pic.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,7 +15,6 @@ const duck = ducky
 const Home = () => {
   return (
     <>
-      <Header/>
       <section className="hero">
         <div className="hero-inner">
           <div className="hero-content">
