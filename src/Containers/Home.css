@@ -6,6 +6,8 @@
   --accent-gradient: linear-gradient(90deg,#de3274,#ba5ee2,#4e9aec,#67e2b5);
   --btn-primary: #23c483;
   --btn-primary-shadow: rgba(35,196,131,0.25);
+  --btn-secondary: #23c483;
+  --btn-secondary-shadow: rgba(35,196,131,0.25);
   --card-bg: rgba(255,255,255,0.06);
   --border-strong: rgba(255,255,255,0.79);
   --link-default: #4F0080;
@@ -207,24 +209,26 @@
 
 .btn-primary {
   background: var(--btn-primary);
-  color: #0a0a0a;
+  color: #333335;
   box-shadow: 0 10px 20px var(--btn-primary-shadow);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  color:whitesmoke;
   box-shadow: 0 14px 28px rgba(35,196,131,0.35);
 }
 
 .btn-secondary {
-  border: 1px solid rgba(255,255,255,0.25);
-  color: #e6edf6;
-  backdrop-filter: blur(6px);
+  background: var(--btn-primary);
+  color: #333335;
+  box-shadow: 0 10px 20px var(--btn-primary-shadow);
 }
 
 .btn-secondary:hover {
-  background: rgba(255,255,255,0.06);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  color:whitesmoke;
+  box-shadow: 0 14px 28px rgba(35,196,131,0.35);
 }
 
 .socials { 
