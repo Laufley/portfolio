@@ -264,6 +264,19 @@
   border: 1px solid rgba(255,255,255,0.12);
 }
 
+.chip:hover,
+.chip:focus {
+  background: rgba(128,128,128,0.25); /* grey background on hover/focus */
+  color: #ffffff;
+  transform: translateY(-2px);
+  cursor: pointer;
+  outline: none;
+}
+
+.chip:focus {
+  box-shadow: 0 0 0 4px rgba(102,126,234,0.12); /* optional accessible focus ring */
+}
+
 .mobile-socials,
 .mobile-skills {
   display: none;
