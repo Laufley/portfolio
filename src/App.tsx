@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './Components/Header'
 import Home from './Containers/Home'
 import Projects from './Components/Projects'
 import Personal from './Components/Personal'
@@ -12,7 +11,6 @@ function App() {
   return (
     <Router basename="/portfolio">
       <div className="App">
-        <Header />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
