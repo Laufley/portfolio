@@ -269,6 +269,30 @@
   display: none;
 }
 
+ /* Quacker! */
+  .quacker {
+  position: absolute;
+  justify-content: center;
+  margin-top: 55rem;
+}
+
+.quacker-button {
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.quacker-button:hover {
+  transform: scale(1.1);
+}
+
+.quacker-button:active {
+  transform: scale(0.95);
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .hero-inner { 

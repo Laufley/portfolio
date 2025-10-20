@@ -1,17 +1,25 @@
-import { Link } from 'react-router-dom'
-import './Header.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Header.css';
 
-function Header() {
-  return (
-    <header>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/personal">Personal</Link>
-        <Link to="/cv">CV</Link>
-      </nav>
-    </header>
-  )
+interface HeaderProps {
+  route?: string;
+  setRoute?: (route: string) => void;
 }
 
-export default Header
+const Header: React.FC<HeaderProps> = ({ setRoute }) => {
+  const handleNav = (path: string) => () => {
+    if (setRoute) setRoute(path);
+  };
+
+  return (
+    <nav id="nav">
+      <Link to="/home" onClick={handleNav('/home')}>Home</Link>
+      <Link to="/Projects" onClick={handleNav('/Projects')}>Projects</Link>
+      <Link to="/Personal" onClick={handleNav('/personal')}>Personal</Link>
+      <Link to="/CV" onClick={handleNav('/CV')}>CV</Link>
+    </nav>
+  );
+};
+
+export default Header;

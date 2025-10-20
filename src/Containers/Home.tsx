@@ -6,9 +6,13 @@ import profile_pic from '../Components/Assets/profile_pic.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import quack_audio from '../Components/Assets/quack1.mp3';
+import ducky from '../Components/Assets/duck.jpeg';
 
 library.add(fab);
 const profilePic = profile_pic;
+const duck = ducky
+
 
 const Home = () => {
   return (
@@ -17,12 +21,12 @@ const Home = () => {
       <section className="hero">
         <div className="hero-inner">
           <div className="hero-content">
-            <div className="overline">Software Engineer</div>
+            <div className="overline">Software Developer</div>
             <h1 className="title">
               Hi, I'm <span className="accent">Indira Borras Gonzalez</span>
             </h1>
             <p className="subtitle">
-              And I have fun coding as a fullstack developer.
+            I'm a fullstack developer. I do stuff. It's fun.
             </p>
             <div className="actions">
               <Link className="btn btn-primary" to="/Projects">View Projects</Link>
@@ -37,7 +41,7 @@ const Home = () => {
               </a>
             </div>
             <div className="skills desktop-skills">
-              {['JavaScript','TypeScript','React','Node.js','Python','Flask','MongoDB','SQL','Cypress','Jest'].map(s => (
+              {['Typescript', 'Javascript','Go','Python','Java','React','Redux','Terraform', 'AWS cdk', 'AWS services', 'CI/CD', 'Jest'].map(s => (
                 <span className="chip" key={s}>{s}</span>
               ))}
             </div>
@@ -60,6 +64,16 @@ const Home = () => {
                 <span className="chip" key={s}>{s}</span>
               ))}
             </div>
+          </div>
+          <div className="quacker">
+            <button className="quacker-button" onClick={() => {
+              const quacker = document.getElementById('quacker-audio') as HTMLAudioElement;
+              quacker.play();
+            }}>
+              <img src={duck} alt="duck" width="30" height="30"/>
+            </button>
+            <audio id="quacker-audio" src={quack_audio} />
+
           </div>
         </div>
       </section>
