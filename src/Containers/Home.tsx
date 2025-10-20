@@ -26,7 +26,7 @@ const Home = () => {
             </p>
             <div className="actions">
               <Link className="btn btn-primary" to="/Projects">View Projects</Link>
-              <Link className="btn btn-secondary" to="/CV">Résumé</Link>
+              <Link className="btn btn-secondary" to="/CV">Resumé</Link>
             </div>
             <div className="socials desktop-socials">
               <a href="https://github.com/Laufley" target="_blank" rel="noreferrer">
