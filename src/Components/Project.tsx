@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProjectByIdPage from './ProjectByIdPage';
+// import ProjectByIdPage from './ProjectByIdPage';
 import { Link } from 'react-router-dom';
 
 interface ProjectProps {
@@ -21,21 +21,22 @@ const Project: React.FC<ProjectProps> = ({
   id,
   title,
   image,
-  github_link,
-  demo,
+  // github_link,
+  // demo,
   stack,
-  nature,
-  duration,
-  info,
-  challenge,
-  solution,
-  features
+  // nature,
+  // duration,
+  // info,
+  // challenge,
+  // solution,
+  // features
 }) => {
   const [selectedProjectId, setSelectedProjectId] = useState<number | null>(null);
 
   const handleClick = (evt: React.MouseEvent<HTMLAnchorElement>): void => {
-    setSelectedProjectId(id);
+    setSelectedProjectId(selectedProjectId);
   };
+
 
   return (
     <>
