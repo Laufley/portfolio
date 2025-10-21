@@ -47,15 +47,27 @@ body {
 /* Mobile */
 @media only screen and (max-width: 414px) {
   #nav {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  padding: 1rem 0;
-  background: linear-gradient(90deg, #de3274, #ba5ee2, #4e9aec, #67e2b5);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    padding: 1rem 0;
+    background: linear-gradient(90deg, #de3274, #ba5ee2, #4e9aec, #67e2b5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100vw;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+
+  #nav a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    white-space: nowrap;
   }
 }
