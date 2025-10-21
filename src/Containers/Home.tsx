@@ -75,8 +75,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="carousel-section" id="projects-carousel">
-        <div className="scroll-trigger">
+       <div className="scroll-trigger">
           <div 
             onClick={() => {
               document.getElementById('projects-display')?.scrollIntoView({ 
@@ -91,7 +90,7 @@ const Home = () => {
             <div className="scroll-text"> View Projects</div>
           </div>
         </div>
-        
+      <section className="carousel-section" id="projects-carousel">
         <div id="projects-display">
           <Projects projects={projectsData} />
         </div>

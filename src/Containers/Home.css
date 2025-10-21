@@ -464,3 +464,124 @@
 
   #i-love { margin-left: 12px; font-size: 30px; }
 }
+
+/* MacBook Pro and Similar Screens (13-16 inch) */
+@media (max-width: 1440px) {
+  .hero {
+    padding: 3rem 2rem 1rem;
+    min-height: 70vh;
+  }
+
+  .hero-inner {
+    max-width: 1000px;
+    gap: 1.5rem;
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .card {
+    max-width: 320px;
+  }
+
+  .title {
+    font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+  }
+
+  .overline {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .skills {
+    gap: 0.4rem;
+  }
+
+  .chip {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .scroll-trigger {
+    margin: 1rem 0;
+    margin-top: -5rem;
+  }
+
+  .arrow-down {
+    font-size: 2.5rem;
+  }
+
+  .scroll-text {
+    font-size: 1rem;
+  }
+
+  .carousel-section {
+    min-height: 80vh;
+    padding: 1rem 0;
+  }
+
+  .quacker {
+    margin-top: 30rem;
+  }
+}
+
+/* Smaller laptops and tablets */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 2rem 1.5rem 1rem;
+    min-height: 65vh;
+  }
+
+  .hero-inner {
+    max-width: 900px;
+    gap: 1rem;
+  }
+
+  .card {
+    max-width: 280px;
+  }
+
+  .title {
+    font-size: clamp(1.6rem, 2vw, 2rem);
+  }
+
+  .overline {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .actions {
+    gap: 0.75rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .scroll-trigger {
+    margin-top: -4rem;
+  }
+
+  .arrow-down {
+    font-size: 2rem;
+  }
+
+  .quacker {
+    margin-top: 25rem;
+  }
+
+  /* Show mobile versions */
+  .desktop-socials,
+  .desktop-skills {
+    display: none;
+  }
+
+  .mobile-socials,
+  .mobile-skills {
+    display: flex;
+    justify-content: center;
+  }
+}
