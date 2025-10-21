@@ -273,16 +273,70 @@
   display: none;
 }
 
-/* Scroll down projects*/
-.scroll-down-to-projects {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
+/* carousel-section*/
+.carousel-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
 }
 
+/* Scroll Arrows */
+.scroll-trigger {
+  margin: 8rem 0;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem;
+}
 
- /* Quacker! */
+.arrow-bounce {
+  animation: bounce 2s infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arrow-down {
+  font-size: 5rem;
+  color: var(--border-strong);
+  text-shadow: 0 0 10px rgba(234, 234, 234, 0.5);
+}
+
+.scroll-text {
+  color: var(--border-strong);
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Quacker! */
   .quacker {
   position: absolute;
   justify-content: center;
