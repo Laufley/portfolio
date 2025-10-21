@@ -7,7 +7,7 @@
   align-items: center;
   gap: 2rem;
   padding: 2rem 0;
-  min-height: 60vh;
+  min-height: 75vh;
 }
 
 #carousel-view {
@@ -16,10 +16,10 @@
   max-width: 1800px;
   height: 600px;
   display: grid;
-  grid-template-columns: 1fr 2.2fr 1fr;
+  grid-template-columns: 1fr 1.5fr 1fr;
   align-items: center;
   justify-items: center;
-  gap: 2rem;
+  gap: 1rem;
   padding: 0 2rem;
 }
 
@@ -59,34 +59,34 @@
 
 #previous-item {
   grid-column: 1;
-  max-width: 700px;
+  max-width: 800px;
   height: 500px;
-  transform: translateX(-15%) scale(0.85);
-  opacity: 0.5;
-  filter: blur(2px) brightness(0.6);
+  transform: translateX(-25%) scale(0.85);
+  opacity: 0.8;
+  filter: blur(1px) brightness(0.7);
   transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
 
 #current-item {
   grid-column: 2;
-  max-width: 1200px;
-  height: 600px;
-  transform: translateX(0) scale(1);
+  max-width: 1100px;
+  height: 460px;
+  transform: translateX(0) scale(1.4);
   opacity: 1;
   filter: none;
-  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 3;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
 #next-item {
   grid-column: 3;
-  max-width: 700px;
+  max-width: 800px;
   height: 500px;
-  transform: translateX(15%) scale(0.85);
-  opacity: 0.5;
-  filter: blur(2px) brightness(0.6);
+  transform: translateX(25%) scale(0.85); 
+  opacity: 0.8;
+  filter: blur(1px) brightness(0.7);
   transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
@@ -133,57 +133,7 @@
 
 /* Buttons*/
 .carousel-button {
-    display: flex;
-    position: absolute;
-    background-color: rgba(137, 43, 226, 0.48);
-    font-size: 90px;
-    z-index: 10;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 30%;
-    border-width: 6px;
-    border-top: 2px solid blueviolet;
-    border-left: 2px solid blueviolet;
-    border-bottom: 2px solid rgb(238, 103, 238);
-    border-right: 2px solid rgb(238, 103, 238);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel-button:hover {
-    background-color: whitesmoke;
-    cursor: pointer;
-    border-top: 2px solid blueviolet;
-    border-left: 2px solid blueviolet;
-    border-bottom: 2px solid rgb(238, 103, 238);
-    border-right: 2px solid rgb(238, 103, 238);
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
-}
-
-#button-previous {
-    left: 22%;
-    transform: translate(-50%, -50%);
-    padding-left: 1.5%;
-    padding-right: 2%;
-}
-
-#button-next {
-    left: 78%;
-    transform: translate(-50%, -50%);
-    padding-left: 2%;
-    padding-right: 1.5%;
-}
-
-#button-next:hover {
-    background-color: whitesmoke;
-    cursor: pointer;
-    border-top: 2px solid blueviolet;
-    border-left: 2px solid blueviolet;
-    border-bottom: 2px solid rgb(238, 103, 238);
-    border-right: 2px solid rgb(238, 103, 238);
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px;
+    display: none; /* Remove the carousel buttons */
 }
 
 /* Info box below carousel */
