@@ -33,7 +33,7 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   const [selectedProjectId, setSelectedProjectId] = useState<number | null>(null);
 
-  const handleClick = (evt: React.MouseEvent<HTMLAnchorElement>): void => {
+  const handleClick = (): void => {
     setSelectedProjectId(selectedProjectId);
   };
 
