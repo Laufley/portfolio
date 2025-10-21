@@ -1,3 +1,4 @@
+
 import './Home.css';
 import { Link } from 'react-router-dom';
 import profile_pic from '../Components/Assets/profile_pic.jpg';
@@ -6,11 +7,12 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import quack_audio from '../Components/Assets/quack1.mp3';
 import ducky from '../Components/Assets/duck.jpeg';
+import Projects from '../Components/Projects';
+import projectsData from '../Data/projectsData';
 
 library.add(fab);
 const profilePic = profile_pic;
 const duck = ducky
-
 
 const Home = () => {
   return (
@@ -73,13 +75,26 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="scroll-down-to-projects">
-        <Link to="/Projects">
-          <div className="arrow-bounce">
-            <span className="arrow-down">&#x2193;</span>
+      <section className="carousel-section" id="projects-carousel">
+        <div className="scroll-trigger">
+          <div 
+            onClick={() => {
+              document.getElementById('projects-display')?.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }}
+          >
+            <div className="arrow-bounce">
+              <span className="arrow-down">↓</span>
+            </div>
+            <div className="scroll-text">Scroll down to Projects</div>
           </div>
-          <div className="scroll-text">Scroll down to Projects</div>
-        </Link>
+        </div>
+        
+        <div id="projects-display">
+          <Projects projects={projectsData} />
+        </div>
       </section>
     </>
   );
