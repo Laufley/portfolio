@@ -92,45 +92,55 @@
   }
 }
 
-/* Arrows */
+/* Buttons */
+
 .carousel-button {
-  position: absolute;
-  background: rgba(137, 43, 226, 0.85);
-  backdrop-filter: blur(10px);
-  font-size: 2.5rem;
-  z-index: 10;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  border: 3px solid rgba(186, 94, 226, 0.9);
-  padding: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  color: white;
-  width: 75px;
-  height: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    position: absolute;
+    background-color: rgba(137, 43, 226, 0.48);
+    font-size: 90px;
+    z-index: 2;
+    margin-top: 20%;
+    border-radius: 30%;
+    border-width: 6px;
+    border-top: 2px solid blueviolet;
+    border-left: 2px solid blueviolet;
+    border-bottom: 2px solid rgb(238, 103, 238);
+    border-right: 2px solid rgb(238, 103, 238);
 }
 
-.carousel-button:hover {
-  background: rgba(186, 94, 226, 1);
-  border-color: rgb(238, 103, 238);
-  box-shadow: 0 0 30px rgba(240, 46, 170, 0.8);
-  transform: translateY(-50%) scale(1.1);
-}
-
-.carousel-button:active {
-  transform: translateY(-50%) scale(0.95);
-}
+.carousel-button:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+        border-top: 2px solid blueviolet;
+        border-left: 2px solid blueviolet;
+        border-bottom: 2px solid rgb(238, 103, 238);
+        border-right: 2px solid rgb(238, 103, 238);
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+        }
 
 #button-previous {
-  left: 22rem;
+    left: 0;
+    margin-left: 2%;
+    padding-left: 1.5%;
+    padding-right: 2%;
 }
 
 #button-next {
-  right: 22rem;
+    right: 0;
+    margin-right: 20%;
+    padding-left: 2%;
+    padding-right: 1.5%;
+}
+
+#button-next:hover {
+background-color: whitesmoke;
+cursor: pointer;
+    border-top: 2px solid blueviolet;
+    border-left: 2px solid blueviolet;
+    border-bottom: 2px solid rgb(238, 103, 238);
+    border-right: 2px solid rgb(238, 103, 238);
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px;
 }
 
 /* Info box below carousel */
