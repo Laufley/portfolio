@@ -20,14 +20,17 @@ const ProjectCard: React.FC<{ project: ProjectType }> = ({ project }) => {
 
 const Carousel: React.FC<CarouselProps> = ({ projects }) => {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+  const [direction, setDirection] = useState<'left' | 'right' | null>(null);
 
   const handleNext = () => {
+    setDirection('left');
     setCurrentProjectIndex((prevIndex) => 
       prevIndex === projects.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const handlePrevious = () => {
+    setDirection('right');
     setCurrentProjectIndex((prevIndex) => 
       prevIndex === 0 ? projects.length - 1 : prevIndex - 1
     );
@@ -47,46 +50,38 @@ const Carousel: React.FC<CarouselProps> = ({ projects }) => {
 
   return (
     <div id="carousel-container" className="w-full max-w-[1800px] mx-auto flex flex-col items-center gap-8 py-16 min-h-[50vh]">
-      {/* Carousel View */}
       <div id="carousel-view" className="relative w-full max-w-[1800px] h-[650px] grid grid-cols-[1fr_1.8fr_1fr] items-center justify-items-center gap-12 px-8">
         
-        {/* Previous Project (Left) */}
-        <div id="previous-item" className="carousel-side-item">
+        <div 
+          id="previous-item" 
+          className={`carousel-side-item ${direction === 'right' ? 'slide-left' : ''}`}
+          onClick={handlePrevious}
+          role="button"
+          tabIndex={0}
+          aria-label="Previous project"
+        >
           <ProjectCard project={projects[getPreviousIndex()]} />
         </div>
 
-        {/* Current Project (Center) */}
-        <div id="current-item" className="carousel-current-item">
+        <div 
+          id="current-item" 
+          className={`carousel-current-item ${direction ? 'slide-center' : ''}`}
+        >
           <ProjectCard project={projects[currentProjectIndex]} />
         </div>
 
-        {/* Next Project (Right) */}
-        <div id="next-item" className="carousel-side-item">
-          <ProjectCard project={projects[getNextIndex()]} />
-        </div>
-
-        {/* Previous Button */}
-        <button 
-          id="button-previous"
-          onClick={handlePrevious}
-          className="carousel-button"
-          aria-label="Previous project"
-        >
-          <i className="fa">&#xf100;</i>
-        </button>
-
-        {/* Next Button */}
-        <button 
-          id="button-next"
+        <div 
+          id="next-item" 
+          className={`carousel-side-item ${direction === 'left' ? 'slide-right' : ''}`}
           onClick={handleNext}
-          className="carousel-button"
+          role="button"
+          tabIndex={0}
           aria-label="Next project"
         >
-          <i className="fa">&#xf101;</i>
-        </button>
+          <ProjectCard project={projects[getNextIndex()]} />
+        </div>
       </div>
 
-      {/* Info Box */}
       <div id="carousel-info-box" className="bg-[rgba(255,255,255,0.15)] backdrop-blur-[10px] 
                       border-2 border-[rgba(255,255,255,0.3)] 
                       rounded-[20px] 
