@@ -6,6 +6,7 @@ import CV from './Components/CV'
 import ProjectByIdPage from './Components/ProjectByIdPage'
 import ErrorPage from './Components/ErrorPage'
 import './App.css'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Header from './Components/Header'
 
 function App() {
