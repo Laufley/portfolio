@@ -70,9 +70,16 @@ const Home = () => {
               <img src={duck} alt="duck" width="30" height="30"/>
             </button>
             <audio id="quacker-audio" src={quack_audio} />
-
           </div>
         </div>
+      </section>
+      <section className="scroll-down-to-projects">
+        <Link to="/Projects">
+          <div className="arrow-bounce">
+            <span className="arrow-down">&#x2193;</span>
+          </div>
+          <div className="scroll-text">Scroll down to Projects</div>
+        </Link>
       </section>
     </>
   );

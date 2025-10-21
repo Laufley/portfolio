@@ -273,6 +273,15 @@
   display: none;
 }
 
+/* Scroll down projects*/
+.scroll-down-to-projects {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+
  /* Quacker! */
   .quacker {
   position: absolute;
