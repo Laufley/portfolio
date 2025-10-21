@@ -14,9 +14,9 @@ const Header: React.FC<HeaderProps> = ({ setRoute }) => {
 
   return (
     <nav id="nav">
-      <Link to="/home" onClick={handleNav('/home')}>Home</Link>
-      <Link to="/Projects" onClick={handleNav('/Projects')}>Projects</Link>
-      <Link to="/About" onClick={handleNav('/About')}>About</Link>
+      <Link to="/home" onClick={handleNav('/')}>Home</Link>
+      <Link to="/projects" onClick={handleNav('/projects')}>Projects</Link>
+      <Link to="/about" onClick={handleNav('/about')}>About</Link>
       <Link to="/CV" onClick={handleNav('/CV')}>CV</Link>
     </nav>
   );
