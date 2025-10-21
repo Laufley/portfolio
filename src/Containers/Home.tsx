@@ -20,14 +20,14 @@ const Home = () => {
           <div className="hero-content">
             <div className="overline">Software Developer</div>
             <h1 className="title">
-              Hi, I'm <span className="accent">Indira Borras Gonzalez</span>
+              Hi, I'm <span className="accent">Indira Borràs González</span>
             </h1>
             <p className="subtitle">
             I'm a fullstack developer. I do stuff. It's fun.
             </p>
             <div className="actions">
               <Link className="btn btn-primary" to="/Projects">View Projects</Link>
-              <Link className="btn btn-secondary" to="/CV">Resumé</Link>
+              <Link className="btn btn-secondary" to="/CV">CV</Link>
             </div>
             <div className="socials desktop-socials">
               <a href="https://github.com/Laufley" target="_blank" rel="noreferrer">
