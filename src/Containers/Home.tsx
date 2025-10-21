@@ -25,7 +25,7 @@ const Home = () => {
               Hi, I'm <span className="accent">Indira Borràs González</span>
             </h1>
             <p className="subtitle">
-            I'm a fullstack developer. I do stuff. It's fun.
+            I'm a fullstack developer. I build stuff. It's fun.
             </p>
             <div className="actions">
               <Link className="btn btn-primary" to="/Projects">View Projects</Link>
@@ -88,7 +88,7 @@ const Home = () => {
             <div className="arrow-bounce">
               <span className="arrow-down">↓</span>
             </div>
-            <div className="scroll-text">Scroll down to Projects</div>
+            <div className="scroll-text"> View Projects</div>
           </div>
         </div>
         

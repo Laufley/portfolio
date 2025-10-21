@@ -91,6 +91,14 @@
   z-index: 1;
 }
 
+#previous-item:hover {
+  cursor: pointer;
+}
+
+#next-item:hover {
+  cursor: pointer;
+}
+
 /* keyframe animation for sliding effect */
 @keyframes slideInFromRight {
   0% {
@@ -156,6 +164,7 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   margin-bottom: 1rem;
+  color: rgb(78, 74, 78);
 }
 
 .project-title {
@@ -170,6 +179,7 @@
   gap: 0.5rem;
   justify-content: center;
   margin-bottom: 1rem;
+  color: rgb(39, 35, 37);
 }
 
 .tech-tag {
