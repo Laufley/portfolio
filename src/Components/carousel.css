@@ -14,7 +14,7 @@
   position: relative;
   width: 100%;
   max-width: 1800px;
-  height: 600px;
+  height: 800px;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
   align-items: center;
@@ -353,5 +353,81 @@
   #carousel-info-box {
     padding: 1rem 2rem;
     font-size: 1rem;
+  }
+}
+
+/* MacBook Pro (13-16 inch) screens */
+@media screen and (max-width: 1440px) {
+  #carousel-container {
+    max-width: 1200px;
+    min-height: 90vh;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  #carousel-view {
+    height: 500px;
+    grid-template-columns: 0.8fr 1.2fr 0.8fr;
+    gap: 1rem;
+  }
+
+  #current-item {
+    max-width: 800px;
+    height: 300px;
+    transform: translateX(0) scale(1.2);
+  }
+
+  #previous-item,
+  #next-item {
+    max-width: 500px;
+    height: 350px;
+    transform: translateX(-15%) scale(0.85);
+  }
+
+  #next-item {
+    transform: translateX(15%) scale(0.85);
+  }
+
+  #carousel-info-box {
+    max-width: 700px;
+    padding: 1.5rem;
+    margin-top: 0rem;
+    position: relative;
+    z-index: 10;
+  }
+
+   .project-counter {
+    font-size: 1.2rem;
+    margin-top: -2.5rem;
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-top: -0.5rem;
+  }
+
+  .tech-stack {
+    margin-bottom: 0.75rem;
+  }
+
+  .tech-tag {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .project-info {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .project-links {
+    gap: 0.75rem;
+  }
+
+  .project-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
   }
 }

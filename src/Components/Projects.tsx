@@ -22,12 +22,10 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
-    <>
-    <h1 style={{ color: 'white' }}>:)</h1>
     <div id="page-wrapper">
+      <div className="floating-smile">:)</div>
       <Carousel projects={projects} />
-    </div></>
-    
+    </div>
   );
 };
 

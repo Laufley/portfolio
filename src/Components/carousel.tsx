@@ -83,7 +83,7 @@ const Carousel: React.FC<CarouselProps> = ({ projects }) => {
       <div className="project-counter">{currentProjectIndex + 1} / {projects.length} </div>
       <div id="carousel-info-box">
         
-        <h2 className="project-title">{projects[currentProjectIndex].title}</h2>
+        <h2 className="project-title"> {projects[currentProjectIndex].title}</h2>
         <div className="tech-stack">
           {projects[currentProjectIndex].stack.map((tech, index) => (
             <span key={index} className="tech-tag">
