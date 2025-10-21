@@ -80,11 +80,9 @@ const Carousel: React.FC<CarouselProps> = ({ projects }) => {
           <ProjectCard project={projects[getNextIndex()]} />
         </div>
       </div>
-
+      <div className="project-counter">{currentProjectIndex + 1} / {projects.length} </div>
       <div id="carousel-info-box">
-        <p className="project-counter">
-          ----- Project {currentProjectIndex + 1} of {projects.length} -----
-        </p>
+        
         <h2 className="project-title">{projects[currentProjectIndex].title}</h2>
         <div className="tech-stack">
           {projects[currentProjectIndex].stack.map((tech, index) => (
