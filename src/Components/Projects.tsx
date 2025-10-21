@@ -22,9 +22,12 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
+    <>
+    <h1 style={{ color: 'white' }}>:)</h1>
     <div id="page-wrapper">
       <Carousel projects={projects} />
-    </div>
+    </div></>
+    
   );
 };
 

@@ -162,6 +162,7 @@
 .project-counter {
   margin: 0;
   font-weight: 600;
+  font-size: large;
   letter-spacing: 0.05em;
   margin-bottom: 1rem;
   color: rgb(78, 74, 78);
