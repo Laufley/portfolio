@@ -144,17 +144,61 @@
   border-radius: 20px;
   padding: 1.5rem 3rem;
   color: #ffffff;
-  font-size: 1.2rem;
   text-align: center;
-  max-width: 500px;
+  max-width: 600px;
   width: 90%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
 }
 
-#carousel-info-box p {
+.project-counter {
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  background: rgba(137, 43, 226, 0.3);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.project-info {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project-link {
+  background: rgba(137, 43, 226, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background: rgba(137, 43, 226, 0.5);
 }
 
 /* Responsive */
