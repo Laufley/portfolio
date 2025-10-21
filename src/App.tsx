@@ -16,7 +16,7 @@ function App() {
         <Header/>
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/projects" element={<Projects projects={[]} />} />
             <Route path="/projects/:id" element={<ProjectByIdPage />} />
             <Route path="/about" element={<About />} />
