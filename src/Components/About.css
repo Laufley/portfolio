@@ -7,7 +7,7 @@
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem 0;
+  gap: 4rem;
   padding: 0;
   margin: 0 auto;
   max-width: 2000px;
@@ -16,11 +16,11 @@
 }
 
 .card {
-  height: 230px;
+  height: 250px;
   width: 100%;
   perspective: 1000px;
   cursor: pointer;
-  min-width: 500px;
+  min-width: 540px;
 }
 
 
@@ -70,10 +70,12 @@
 .card-back ul {
   text-align: left;
   padding-right: 5px;
-  margin-left: -rem;;
+  margin-left: -1rem;
 }
 
 .card-back ul li {
   text-align: left;
   margin-bottom: 8px;
+  margin-right: -15px;
+ 
 }

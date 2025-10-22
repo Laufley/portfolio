@@ -17,15 +17,23 @@ function About() {
         "I grew up in a <strong>very impoverished</strong> neighborhood outside BCN.",
         "An IT career was unheard of (there) by that time. But I loved science!",
         "<strong>High school:</strong> I pursued Bachillerato Científico.",
-        "<strong>Uni:</strong> Worked and studied hard to obtain grants.",
-        "<strong>Clinical psychology:</strong> I graduated and worked in a hostpital, and discovered how tainted the field was with pharma. I could not morally continue down that path.",
-        "<strong>Moved to Edinburgh</strong>: for love, with 200€ in my pocket, and with a earnt contact to do a doctorate in Scotland. A new begining!",
+        "<strong>Uni:</strong> Worked and studied hard to obtain grants for Clinical Psychology.",
+        "<strong>The turn point:</strong> I graduated, worked in a hostpital, and discovered how tainted the field was with pharma. I could not morally continue that path.",
+        "<strong>Moved to Edinburgh</strong>: For love, with 200€ in my pocket, and with a earnt contact to do a doctorate programme in Scotland. A new begining!",
       ]
     },
     {
       front: "Life in Edinburgh",
       back: [
-        "5+ years of web development",
+        "<strong>Bad news:</strong> Qualified for the doctorate, but the salary would be too low.",
+        "I worked as a <strong>waitress in a kebab shop</strong>. I had to learn English anyway.",
+        "I leveled up to <strong>Customer Service Agent</strong> to boost my English.",
+        "I got promoted to <strong>Social Media Engagement Coordinator</strong>. My first Client meetings were nerve-wracking!",
+        "I wanted to grow. By then, I knew about IT as a career, but I didn't have the education. I wish I had. So I decided to watch as an <strong>IT Recruiter</strong>.",
+        "I got promoted to Senior. I also helped to design our website and logo! ;)",
+        "But through befriending devs, I got jealous of their skills.",
+        "So I did a bootcamp. Again, investing all my savings. It changed EVERYTHING",
+        "<strong>Good news!:</strong> I found a job as a <strong><u>Developer</u></strong> in 2023 and I'm loving every second!",
       ]
     },
     {
@@ -77,3 +85,9 @@ function About() {
 }
 
 export default About;
+
+
+// the best gamble you can do, is against yourself
+// life is hard, but so are you
+// poverty chases you your whole life, the fact that I don't have an IT degree is a scar I will always carry. BUT hey, news! i'm now taking a master's in Software development so that will fix it a bit (?)
+// when life gives you lemons... ask yourself, what would indira do? and then do the opposite.
