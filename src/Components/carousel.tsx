@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { ProjectType } from './Projects';
 import './carousel.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faVideo } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+library.add(fab, faVideo);
 
 interface CarouselProps {
   projects: ProjectType[];
@@ -93,21 +99,13 @@ const Carousel: React.FC<CarouselProps> = ({ projects }) => {
         </div>
         <p className="project-info">{projects[currentProjectIndex].info}</p>
         <div className="project-links">
-          <a 
-            href={projects[currentProjectIndex].github_link} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="project-link"
-          >
-            GitHub
+          <a href="https://github.com/Laufley" target="_blank" rel="noopener noreferrer" className="project-link">
+            <FontAwesomeIcon icon={["fab","github"]} />
+            <span style={{ marginLeft: '8px' }}>GitHub</span>
           </a>
-          <a 
-            href={projects[currentProjectIndex].demo_link} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="project-link"
-          >
-            Live Demo
+          <a href={projects[currentProjectIndex].demo_link} target="_blank" rel="noopener noreferrer" className="project-link">
+            <FontAwesomeIcon icon={faVideo} />
+            <span style={{ marginLeft: '8px' }}>Demo</span>
           </a>
         </div>
       </div>

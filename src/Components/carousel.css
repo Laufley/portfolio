@@ -212,6 +212,7 @@
 
 .project-link:hover {
   background: rgba(137, 43, 226, 0.5);
+  color: white;
 }
 
 /* Responsive - Mobile */
@@ -290,6 +291,7 @@
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
   }
+  
 }
 
 /* Large laptops and desktops */
@@ -383,6 +385,10 @@
   #button-next {
     left: 82%;
   }
+  .project-link:hover {
+  background: rgba(137, 43, 226, 0.5);
+  color: white;
+}
 }
 
 /* Mobile */
@@ -464,6 +470,10 @@
   .project-link {
     padding: 0.3rem 0.6rem;
     font-size: 0.8rem;
+  }
+  .project-link:click {
+    background: rgba(137, 43, 226, 0.5);
+    color: white;
   }
 }
 

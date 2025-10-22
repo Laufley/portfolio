@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css';
-import Carousel from './carousel'
+import Carousel from './carousel';
 
 export interface ProjectType {
   title: string;
