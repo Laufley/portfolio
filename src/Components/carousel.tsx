@@ -6,6 +6,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faVideo } from '@fortawesome/free-solid-svg-icons';
 import { faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { Link } from 'react-router-dom';
 
 library.add(fab, faVideo, faPuzzlePiece);
 
@@ -108,10 +109,13 @@ const Carousel: React.FC<CarouselProps> = ({ projects }) => {
             <FontAwesomeIcon icon={faVideo} />
             <span style={{ marginLeft: '8px' }}>Demo</span>
           </a>
-          <a href={projects[currentProjectIndex].demo_link} target="_blank" rel="noopener noreferrer" className="project-link">
+          <Link 
+            to={`/projects/${currentProjectIndex}`} 
+            className="project-link"
+          >
             <FontAwesomeIcon icon={faPuzzlePiece} />
             <span style={{ marginLeft: '8px' }}>More Info</span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
