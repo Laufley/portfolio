@@ -145,7 +145,7 @@
 }
 
 .project-counter {
-  margin-top: 1rem;
+  margin-top: rem;
   font-weight: 600;
   font-size: 1.6rem;
   letter-spacing: 0.05em;
@@ -252,7 +252,7 @@
 
   #carousel-info-box {
     max-width: 700px;
-    padding: 1.5rem;
+    padding: 2rem 2rem 0rem 2rem;
     margin-top: 0rem;
     position: relative;
     z-index: 10;
@@ -260,7 +260,7 @@
 
    .project-counter {
     font-size: 1.2rem;
-    margin-top: -2.5rem;
+    margin-top: -4rem;
   }
 
   .project-title {
@@ -317,6 +317,7 @@
     max-width: 600px;
     height: 400px;
   }
+  
 }
 
 /* Small laptops */
@@ -350,6 +351,7 @@
   #button-next {
     left: 77%;
   }
+  
 }
 
 /* iPads and Medium tablets */
@@ -395,7 +397,8 @@
   background: rgba(137, 43, 226, 0.5);
   opacity: 1; 
   color: #67e2b5; 
-}
+  }
+  
 }
 
 /* Mobile */
