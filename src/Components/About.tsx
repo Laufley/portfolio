@@ -13,21 +13,36 @@ function About() {
   const cards = [
     {
       front: "Life in Barcelona",
-      back: "hoooot!"
+      back: [
+        "I grew up in a <strong>very impoverished</strong> neighborhood outside BCN.",
+        "An IT career was unheard of (there) by that time. But I loved science!",
+        "<strong>High school:</strong> I pursued Bachillerato Científico.",
+        "<strong>Uni:</strong> Worked and studied hard to obtain grants.",
+        "<strong>Clinical psychology:</strong> I graduated and worked in a hostpital, and discovered how tainted the field was with pharma. I could not morally continue down that path.",
+        "<strong>Moved to Edinburgh</strong>: for love, with 200€ in my pocket, and with a earnt contact to do a doctorate in Scotland. A new begining!",
+      ]
     },
     {
       front: "Life in Edinburgh",
-      back: "5+ years of web development"
+      back: [
+        "5+ years of web development",
+      ]
     },
     {
       front: "Hobbies & Interests",
-      back: "Bachelor's in Computer Science"
+      back: [
+        "Bachelor's in Computer Science",
+      ]
     },
     {
       front: "Flip me (?)",
       back: "Peekaboo!"
-    }
+    },
   ];
+
+  const renderListItem = (text: string) => { // this is what allows me to render HTML inside list items
+    return <span dangerouslySetInnerHTML={{ __html: text }} />;
+  };
 
   return (
     <div className="about-wrapper">
@@ -43,7 +58,15 @@ function About() {
                 <h2>{card.front}</h2>
               </div>
               <div className="card-back">
-                <p>{card.back}</p>
+                {Array.isArray(card.back) ? (
+                  <ul>
+                    {card.back.map((item, i) => (
+                      <li key={i}>{renderListItem(item)}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{card.back}</p>
+                )}
               </div>
             </div>
           </div>

@@ -1,10 +1,18 @@
+.about-wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(400px, 1fr)); 
-  gap: 3rem;
-  padding: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 0;
+  padding: 0;
   margin: 0 auto;
-  max-width: 2400px;
+  max-width: 2000px;
+  width: 100%;
+  margin-top: 3rem;
 }
 
 .card {
@@ -12,8 +20,9 @@
   width: 100%;
   perspective: 1000px;
   cursor: pointer;
-  min-width: 400px;
+  min-width: 500px;
 }
+
 
 .card-inner {
   position: relative;
@@ -56,4 +65,15 @@
 .card:hover {
   transform: translateY(-5px);
   transition: transform 0.3s ease;
+}
+
+.card-back ul {
+  text-align: left;
+  padding-right: 5px;
+  margin-left: -rem;;
+}
+
+.card-back ul li {
+  text-align: left;
+  margin-bottom: 8px;
 }
