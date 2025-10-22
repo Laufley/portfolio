@@ -23,7 +23,7 @@ const ProjectByIdPage: React.FC<ProjectByIdPageProps> = ({ projects }) => {
       <Link to="/projects" className="back-link">← Back to Projects</Link>
       <div className="project-detail">
         
-        <h1>{project.title}</h1>
+        <h1 className='ProjectIdTitle'>{project.title}</h1>
         <div className="imageID-container">
           <img 
             src={project.projectImg} 
@@ -43,20 +43,23 @@ const ProjectByIdPage: React.FC<ProjectByIdPageProps> = ({ projects }) => {
         </div>
 
         <div className="project-info">
-          <p><strong>Duration:</strong> {project.duration}</p>
-          <p><strong>Nature:</strong> {project.nature}</p>
-          <p><strong>Stack:</strong> {project.stack.join(', ')}</p>
+          <h3>Duration:</h3>
+          <p>{project.duration}</p>
+
+          <h3>Nature:</h3><p style={{ display: 'inline' }}>{project.nature}</p>
+
+          <h3>Stack:</h3><p style={{ display: 'inline' }}>{project.stack.join(', ')}</p>
           
-          <h2>About</h2>
+          <h3>About</h3>
           <p>{project.info}</p>
           
-          <h2>Challenge</h2>
+          <h3>Challenge</h3>
           <p>{project.challenge}</p>
           
-          <h2>Solution</h2>
+          <h3>Solution</h3>
           <p>{project.solution}</p>
           
-          <h2>Features</h2>
+          <h3>Features</h3>
           <ul>
             {project.features.map((feature, index) => (
               <li key={index}>{feature}</li>
