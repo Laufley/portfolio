@@ -82,5 +82,18 @@
     width: 300px;
     height: 225px;
   }
+  .back-link {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(62, 6, 116);
+  text-decoration: none;
+}
+
+.back-link:touch {
+  color: white
+}
 }
 
