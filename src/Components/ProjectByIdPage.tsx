@@ -1,15 +1,22 @@
-import { useParams, Link } from 'react-router-dom'
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { ProjectType } from './Projects';
 
-function ProjectByIdPage() {
-  const { id } = useParams<{ id: string }>()
-
-  return (
-    <div className="project-detail">
-      <h1>Project {id}</h1>
-      <p>Details for project {id} go here</p>
-      <Link to="/projects">← Back to Projects</Link>
-    </div>
-  )
+interface ProjectByIdPageProps {
+  projects: ProjectType[];
 }
 
-export default ProjectByIdPage
+const ProjectByIdPage: React.FC<ProjectByIdPageProps> = ({ projects }) => {
+  const { id } = useParams<{ id: string }>();
+  const project = projects[Number(id)];
+
+  if (!project) {
+    return <div>Project not found :(</div>;
+  }
+
+  return (
+   
+  );
+};
+
+export default ProjectByIdPage;
