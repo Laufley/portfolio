@@ -55,7 +55,14 @@ function About() {
     {
       front: "Hobbies & Interests",
       back: [
-        "Bachelor's in Computer Science",
+         "Building my (secret & private) app as a side-project.",
+         "Writing stories cooperatively & worldbuilding with others.",
+         "Playing tabletop rpgs (GURPS, D&D) with friends",
+         "Playing boardgames and videogames.",
+         "Reading - My fav author is Brandon Sanderson.",
+         "Painting Warhammer miniatures for tabletop games.",
+         "Hiking.",
+         "Traveling - I finally went to Japan!",
       ]
     },
     {
