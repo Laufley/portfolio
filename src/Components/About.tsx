@@ -14,10 +14,16 @@ function About() {
 
   const handleClick = (event: React.MouseEvent<HTMLDivElement>, index: number) => {
     const target = event.target as HTMLElement;
-    if (target.textContent === 'Developer') {
+    if (target.classList.contains('sound-trigger')) {
       audio.play();
+      return;
     }
     handleFlip(index);
+  };
+
+  const handleSoundPlay = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    audio.play();
   };
 
   const cards = [
@@ -35,15 +41,15 @@ function About() {
     {
       front: "Life in Edinburgh",
       back: [
-        "<strong>Bad news:</strong> Qualified for the doctorate, but the salary would be too low.",
+        "<strong><u>Bad news:</u></strong> Qualified for the doctorate, but the salary would be too low.",
         "I worked as a <strong>waitress in a kebab shop</strong>. I had to learn English anyway.",
         "I leveled up to <strong>Customer Service Agent</strong> to boost my English.",
-        "I got promoted to <strong>Social Media Engagement Coordinator</strong>. My first Client meetings were nerve-wracking!",
+        "I got promoted to <strong>Social Media Engagement Coord. </strong> - First client meetings!",
         "I wanted to grow. By then, I knew about IT as a career, but I didn't have the education. I wish I had. So I decided to watch as an <strong>IT Recruiter</strong>.",
         "I got promoted to Senior. I also helped to design our website and logo! ;)",
         "But through befriending devs, I got jealous of their skills.",
         "So I did a bootcamp. Again, investing all my savings. It changed EVERYTHING",
-        "<strong>Good news!:</strong> I found a job as a <strong><u>Developer</u></strong> in 2023 and I'm loving every second!",
+        "<strong><u>Good news:</u></strong> I officially became a <span class='sound-trigger' onclick='handleSoundPlay'><strong><u>Developer</u></strong></span>. Finally!",
       ]
     },
     {
