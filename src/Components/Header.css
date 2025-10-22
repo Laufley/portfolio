@@ -48,9 +48,9 @@ body {
 @media only screen and (max-width: 414px) {
   #nav {
     display: flex;
-    gap: 0.5rem; /* Reduced gap */
-    justify-content: space-between; /* Changed from space-around */
-    padding: 0.8rem 1rem; /* Added horizontal padding */
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
     background: linear-gradient(90deg, #de3274, #ba5ee2, #4e9aec, #67e2b5);
     position: fixed;
     top: 0;
@@ -61,21 +61,20 @@ body {
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
   }
 
   #nav a {
-    font-size: 0.85rem; /* Slightly smaller font */
+    font-size: 0.85rem;
     padding: 0.4rem 0.5rem;
     white-space: nowrap;
-    flex: 1; /* Make links take equal space */
+    flex: 1; 
     text-align: center;
   }
 
-  /* Add this to handle body padding */
   body {
-    padding-top: 3.5rem; /* Add space for fixed nav */
+    padding-top: 3.5rem; 
     margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
   }
 }
