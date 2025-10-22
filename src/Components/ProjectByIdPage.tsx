@@ -20,7 +20,7 @@ const ProjectByIdPage: React.FC<ProjectByIdPageProps> = ({ projects }) => {
 
   return (
     <>
-      <Link to="/projects" className="back-link">← Back to Projects</Link>
+      <Link to="/projects" className="back-link">← Back</Link>
       <div className="project-detail">
         
         <h1 className='ProjectIdTitle'>{project.title}</h1>
@@ -43,23 +43,23 @@ const ProjectByIdPage: React.FC<ProjectByIdPageProps> = ({ projects }) => {
         </div>
 
         <div className="project-info">
-          <h3>Duration:</h3>
+          <h3 style={{ color: 'white' }}>Duration:</h3>
           <p>{project.duration}</p>
 
-          <h3>Nature:</h3><p style={{ display: 'inline' }}>{project.nature}</p>
+          <h3 style={{ color: 'white' }}>Nature:</h3><p style={{ display: 'inline' }}>{project.nature}</p>
 
-          <h3>Stack:</h3><p style={{ display: 'inline' }}>{project.stack.join(', ')}</p>
-          
-          <h3>About</h3>
+          <h3 style={{ color: 'white' }}>Stack:</h3><p style={{ display: 'inline' }}>{project.stack.join(', ')}</p>
+
+          <h3 style={{ color: 'white' }}>About</h3>
           <p>{project.info}</p>
           
-          <h3>Challenge</h3>
+          <h3 style={{ color: 'white' }}>Challenge</h3>
           <p>{project.challenge}</p>
           
-          <h3>Solution</h3>
+          <h3 style={{ color: 'white' }}>Solution</h3>
           <p>{project.solution}</p>
           
-          <h3>Features</h3>
+          <h3 style={{ color: 'white' }}>Features</h3>
           <ul>
             {project.features.map((feature, index) => (
               <li key={index}>{feature}</li>

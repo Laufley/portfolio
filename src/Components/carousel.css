@@ -145,7 +145,7 @@
 }
 
 .project-counter {
-  margin-top: rem;
+  margin-top: -4rem;
   font-weight: 600;
   font-size: 1.6rem;
   letter-spacing: 0.05em;
@@ -451,6 +451,15 @@
     font-size: 0.9rem;
     width: 85%;
     margin-top: 1rem;
+  }
+
+  .project-counter {
+  margin-top: -2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  color: rgb(53, 50, 53);
+  align-items: end;
   }
 
   .project-title {
