@@ -1,13 +1,23 @@
 import { useState } from 'react';
 import './About.css';
+import hallelujah from './Assets/hallelujah.mp3';
 
 function About() {
   const [flipped, setFlipped] = useState([false, false, false, false]);
+  const audio = new Audio(hallelujah);
 
   const handleFlip = (index: number) => {
     const newFlipped = [...flipped];
     newFlipped[index] = !newFlipped[index];
     setFlipped(newFlipped);
+  };
+
+  const handleClick = (event: React.MouseEvent<HTMLDivElement>, index: number) => {
+    const target = event.target as HTMLElement;
+    if (target.textContent === 'Developer') {
+      audio.play();
+    }
+    handleFlip(index);
   };
 
   const cards = [
@@ -59,7 +69,7 @@ function About() {
           <div
             key={index}
             className={`card ${flipped[index] ? 'flipped' : ''}`}
-            onClick={() => handleFlip(index)}
+            onClick={(e) => handleClick(e, index)}
           >
             <div className="card-inner">
               <div className="card-front">
