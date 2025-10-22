@@ -13,8 +13,13 @@ const ProjectByIdPage: React.FC<ProjectByIdPageProps> = ({ projects }) => {
   const { id } = useParams<{ id: string }>();
   const project = projects[Number(id)];
 
+  if (!project) {
+    return <div>Project not found :(</div>;
+  }
 
   return (
+    <>
+    <Link to="/projects" className="back-link">← Back to Projects</Link>
     <div className="project-detail">
       <h1>{project.title}</h1>
       <img src={project.projectImg} alt={project.title} className="project-image" />
@@ -43,10 +48,17 @@ const ProjectByIdPage: React.FC<ProjectByIdPageProps> = ({ projects }) => {
         
         <h2>Solution</h2>
         <p>{project.solution}</p>
+        
+        <h2>Features</h2>
+        <ul>
+          {project.features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
       </div>
-
-      <Link to="/projects" className="back-link">← Back to Projects</Link>
     </div>
+    </>
+    
   );
 };
 
