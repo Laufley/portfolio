@@ -4,9 +4,10 @@ import './carousel.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-library.add(fab, faVideo);
+library.add(fab, faVideo, faPuzzlePiece);
 
 interface CarouselProps {
   projects: ProjectType[];
@@ -106,6 +107,10 @@ const Carousel: React.FC<CarouselProps> = ({ projects }) => {
           <a href={projects[currentProjectIndex].demo_link} target="_blank" rel="noopener noreferrer" className="project-link">
             <FontAwesomeIcon icon={faVideo} />
             <span style={{ marginLeft: '8px' }}>Demo</span>
+          </a>
+          <a href={projects[currentProjectIndex].demo_link} target="_blank" rel="noopener noreferrer" className="project-link">
+            <FontAwesomeIcon icon={faPuzzlePiece} />
+            <span style={{ marginLeft: '8px' }}>More Info</span>
           </a>
         </div>
       </div>
