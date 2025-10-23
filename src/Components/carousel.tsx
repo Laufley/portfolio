@@ -101,14 +101,18 @@ const Carousel: React.FC<CarouselProps> = ({ projects }) => {
         </div>
         <p className="project-info">{projects[currentProjectIndex].info}</p>
         <div className="project-links">
-          <a href="https://github.com/Laufley" target="_blank" rel="noopener noreferrer" className="project-link">
-            <FontAwesomeIcon icon={["fab","github"]} />
-            <span style={{ marginLeft: '8px' }}>GitHub</span>
-          </a>
-          <a href={projects[currentProjectIndex].demo_link} target="_blank" rel="noopener noreferrer" className="project-link">
-            <FontAwesomeIcon icon={faVideo} />
-            <span style={{ marginLeft: '8px' }}>Demo</span>
-          </a>
+          {projects[currentProjectIndex].github_link && (
+            <a href={projects[currentProjectIndex].github_link} target="_blank" rel="noopener noreferrer" className="project-link">
+              <FontAwesomeIcon icon={["fab","github"]} />
+              <span style={{ marginLeft: '8px' }}>GitHub</span>
+            </a>
+          )}
+          {projects[currentProjectIndex].demo_link && (
+            <a href={projects[currentProjectIndex].demo_link} target="_blank" rel="noopener noreferrer" className="project-link">
+              <FontAwesomeIcon icon={faVideo} />
+              <span style={{ marginLeft: '8px' }}>Demo</span>
+            </a>
+          )}
           <Link 
             to={`/projects/${currentProjectIndex}`} 
             className="project-link"
