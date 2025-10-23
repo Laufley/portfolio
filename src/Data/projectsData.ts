@@ -105,7 +105,7 @@ const projectsData = [
         info: "A serverless notes app with authentication, notes saving on Dynamodb, files uploads, and rich text editor using AWS cdk and services.",
         challenge: "To work on frontend, backend and infra all by myself. Learning AWS cdk from scratch.",
         solution: "Build apis, back-end logic, front-end components, file-uploads in quite a clever way, a cool integration for authentication, and rich text editor for the notes. Deployed the whole infra with AWS cdk in typescript.",
-        features: ["Built my infra diagram", "Built APIs", "Built lambdas", "CRUD operations", "User authentication", "List of notes", "Individual note", "Rich text editor for the note", "Add files to the notes", "Store data (notes, files, and static)"],
+        features: ["Built my infra diagram", "Built APIs", "Built lambdas", "CRUD operations", "User authentication", "List of notes", "Individual note", "Rich text editor for the note", "Add files to the notes", "Store different types of data"],
     }
 ];
 
