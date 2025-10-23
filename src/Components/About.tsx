@@ -51,7 +51,7 @@ function About() {
       front: "Life in Edinburgh",
       back: [
         "<strong><u>Sour news:</u></strong> Qualified for the doctorate, but the salary would be too low.",
-        "I started as a <strong>waitress in a kebab shop</strong>. I had to learn English anyway.",
+        "So I started as a <strong>waitress in a kebab shop</strong>. I had to learn English anyway.",
         "I changed to <strong>Customer Service Agent</strong> to boost my English.",
         "I got promoted to <strong>Social Media Coord.</strong> – First client meetings!",
         "I wanted to grow. By then, I knew about IT as a career, but I didn't have the education. I wish I had. But I touched the field as <strong>IT Recruiter</strong>.",
