@@ -84,7 +84,7 @@ const projectsData = [
         info: "Work-related project. I can not disclose any information about it or the client.",
         challenge: "To boldly go where no one has gone before",
         solution: "I collaborated with the team to build a data transformation pipeline in Go. Event-driven architecture. Deployed with Terraform. Used various AWS services to ensure scalability and reliability. Very complex infra spanning different parties on the chain, but we had a fantastic tech lead and senior dev guiding our efforts!",
-        features: ["I worked on every layer (back-end logic, test, infra) ", "I demo-ed frequently to stakeholders", "Extra: I built a complex AWS infrastructure diagram to showcase our team's work to the client", "Extra: I got handpicked to innovate for the client via participating in a dragon's den style presentation proposing a new greenfield project idea", "Happy client :)"],
+        features: ["I worked on every layer (back-end logic, test, infra) ", "I demo-ed frequently to stakeholders", "Extra: I built a complex AWS infrastructure diagram to showcase our team's work to the client", "Extra: I got handpicked to innovate for the client via participating in a dragon's den style presentation proposing a new greenfield project idea", "Made friends along the way", "Happy client :)"],
     },
      {
         title: "Client website (Frontend role)",
@@ -93,9 +93,9 @@ const projectsData = [
         nature: "Client project at work",
         duration: "Joined from private-beta to go-live stages",
         info: "Work-related project. I can not disclose any information about it or the client.",
-        challenge: "Modernise the old stack and create a new responsive, user-friendly webapp with new features",
-        solution: "I contributed to modernising the repo, implemented new features, managed state with Redux and context, wrote unit tests, and cross-collaborated with design & test teams.",
-        features: ["Moved from JS to TS", "Managed state with Redux", "Created unit tests with Jest", "Built new pages", "Built entire user journeys", "Became the go-to person alongside a colleague to demo for the client and stakeholders", "Happy client :)"],
+        challenge: "Take something, make it better",
+        solution: "I implemented new features, managed state, wrote unit tests, and cross-collaborated with design & test teams.",
+        features: ["Contributed to modernising the repo", "Managed state with Redux and context", "Created unit tests with Jest", "Built new pages", "Built entire user journeys", "Became the go-to person alongside a colleague to demo for the client and stakeholders","Happy client :)"],
     },
      {
         title: "Serverless notes app (Fullstack, solo project)",
