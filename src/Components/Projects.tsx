@@ -5,11 +5,11 @@ import Carousel from './carousel';
 export interface ProjectType {
   title: string;
   projectImg: string;
-  github_link: string;
-  demo_link: string;
+  github_link?: string ;
+  demo_link?: string;
   stack: string[];
   nature: string;
-  duration: string;
+  duration?: string;
   info: string;
   challenge: string;
   solution: string;
