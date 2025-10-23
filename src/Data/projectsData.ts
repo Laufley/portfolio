@@ -7,7 +7,7 @@ import kraken_demo from '../Components/Assets/kraken_smol_demo.mp4'
 import ttrpg_website_demo from '../Components/Assets/ttrpg_website_with_crm_demo.mp4'
 import conf_agree from '../Components/Assets/conf_agree.jpg'
 import conf_stamp from '../Components/Assets/conf_stamp.jpg'
-import notes from '../Components/Assets/notes.jpg'
+import conf_red from '../Components/Assets/conf_red.png'
 
 const projectsData = [
     {
@@ -98,14 +98,14 @@ const projectsData = [
         features: ["Moved from JS to TS", "Managed state with Redux", "Created unit tests with Jest", "Built new pages", "Built entire user journeys", "Became the go-to person alongside a colleague to demo for the client and stakeholders", "Happy client :)"],
     },
      {
-        title: "Serverless notes app (Fullstack, personal project)",
-        projectImg: notes,
+        title: "Serverless notes app (Fullstack, solo project)",
+        projectImg: conf_red,
         stack: ["Typescript", "React", "AWS cdk", "Lambda", "S3", "DynamoDB", "Cloudwatch", "Cloudfront", "APIG", "Cognito + Amplify"],
-        nature: "Solo project",
-        info: "A serverless notes app with authentication that allows the user to manage notes and add files.",
-        challenge: "To work on frontend, backend and infra all by myself. The auth part was the trickiest",
-        solution: "Build apis, used pre-signed urls for the file uploads to S3, and Amplify simplified the Cognito integration for authentication. Deployed the whole infra with AWS cdk in typescript.",
-        features: ["Built my infra diagram", "Built APIs", "Built lambdas", "CRUD operations", "User authentication", "List of notes", "Individual note", "Rich text editor for the note", "Add files to the notes (saved on S3 with pre-signed url)", "2 DynamoDB tables(notes, and files metadata) ", "2 buckets (one for the frontend hosting with Cloudfront, one for the files)"],
+        nature: "Solo project - but built with the company laptop so it counts as work-related. Confidential ^^'",
+        info: "A serverless notes app with authentication, notes saving on Dynamodb, files uploads, and rich text editor using AWS cdk and services.",
+        challenge: "To work on frontend, backend and infra all by myself. Learning AWS cdk from scratch.",
+        solution: "Build apis, back-end logic, front-end components, file-uploads in quite a clever way, a cool integration for authentication, and rich text editor for the notes. Deployed the whole infra with AWS cdk in typescript.",
+        features: ["Built my infra diagram", "Built APIs", "Built lambdas", "CRUD operations", "User authentication", "List of notes", "Individual note", "Rich text editor for the note", "Add files to the notes", "Store data (notes, files, and static)"],
     }
 ];
 
