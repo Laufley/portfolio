@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-.cards-container {
+.cardsAbout-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
@@ -15,7 +15,7 @@
   margin-top: 3rem;
 }
 
-.card {
+.cardAbout {
   height: 250px;
   width: 100%;
   perspective: 1000px;
@@ -24,7 +24,7 @@
 }
 
 
-.card-inner {
+.cardAbout-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -33,12 +33,12 @@
   transform-style: preserve-3d;
 }
 
-.card.flipped .card-inner {
+.cardAbout.flipped .cardAbout-inner {
   transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.cardAbout-front,
+.cardAbout-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -51,29 +51,29 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.card-front {
+.cardAbout-front {
   background-color: #f8f9fa;
   color: #333;
 }
 
-.card-back {
+.cardAbout-back {
   background-color: #007bff;
   color: white;
   transform: rotateY(180deg);
 }
 
-.card:hover {
+.cardAbout:hover {
   transform: translateY(-5px);
   transition: transform 0.3s ease;
 }
 
-.card-back ul {
+.cardAbout-back ul {
   text-align: left;
   padding-right: 5px;
   margin-left: -1rem;
 }
 
-.card-back ul li {
+.cardAbout-back ul li {
   text-align: left;
   margin-bottom: 8px;
   margin-right: -15px;

@@ -77,18 +77,18 @@ function About() {
 
   return (
     <div className="about-wrapper">
-      <div className="cards-container">
+      <div className="cardsAbout-container">
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`card ${flipped[index] ? 'flipped' : ''}`}
+            className={`cardAbout ${flipped[index] ? 'flipped' : ''}`}
             onClick={(e) => handleClick(e, index)}
           >
-            <div className="card-inner">
-              <div className="card-front">
+            <div className="cardAbout-inner">
+              <div className="cardAbout-front">
                 <h2>{card.front}</h2>
               </div>
-              <div className="card-back">
+              <div className="cardAbout-back">
                 {Array.isArray(card.back) ? (
                   <ul>
                     {card.back.map((item, i) => (
@@ -114,3 +114,4 @@ export default About;
 // life is hard, but so are you
 // poverty chases you your whole life, the fact that I don't have an IT degree is a scar I will always carry. BUT hey, news! i'm now taking a master's in Software development so that will fix it a bit (?)
 // when life gives you lemons... ask yourself, what would indira do? and then do the opposite.
+// we can only make descisions with the information we have
