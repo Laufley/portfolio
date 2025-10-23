@@ -185,3 +185,30 @@
   color: #f6901a;
 }
 
+/* Mobile */
+@media only screen and (max-width: 414px) {
+  .cardsAbout-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 0 1rem;
+  }
+
+  .cardAbout {
+    height: 400px;
+    max-width: 80%;
+  }
+
+  .mini-card {
+  position: absolute;
+  left: 70%;
+  top: 77%;
+  transform: translate(-50%, -50%);
+  width: 95px;
+  height: 60px;
+  perspective: 1000px;
+  z-index: 2;
+  cursor: pointer;
+  rotate: 10deg;
+  }
+  
+}
