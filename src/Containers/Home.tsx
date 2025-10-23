@@ -59,7 +59,7 @@ const Home = () => {
               </a>
             </div>
             <div className="skill-chips mobile-skills">
-              {['JavaScript','TypeScript','React','Node.js','Python','Flask','MongoDB','SQL','Cypress','Jest'].map(s => (
+             {['Typescript', 'Javascript','Go','Python','Java','React','Redux','Terraform', 'AWS cdk', 'AWS services', 'CI/CD', 'Jest'].map(s => (
                 <span className="chip" key={s}>{s}</span>
               ))}
             </div>
