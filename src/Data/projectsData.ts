@@ -5,6 +5,9 @@ import game from '../Components/Assets/children_of_the_bookcase.jpeg'
 import animals from '../Components/Assets/species.jpeg'
 import kraken_demo from '../Components/Assets/kraken_smol_demo.mp4'
 import ttrpg_website_demo from '../Components/Assets/ttrpg_website_with_crm_demo.mp4'
+import conf_agree from '../Components/Assets/conf_agree.jpg'
+import conf_stamp from '../Components/Assets/conf_stamp.jpg'
+import notes from '../Components/Assets/notes.jpg'
 
 const projectsData = [
     {
@@ -26,7 +29,7 @@ const projectsData = [
         github_link: "https://github.com/Laufley/DnD_monster_archives_app",
         demo_link: "https://Laufley.github.io/monster_archives_app",
         stack: ["JavaScript", "React", "HTML", "CSS"],
-        nature: "Individual project",
+        nature: "Solo project",
         duration: "3 days",
         info: "To help Dungeon Masters find D&D monsters' main information quickly so that the time they spend creating games for the players is optimised.",
         challenge: "Working with a large and complex D&D API that was split into unfinished bits, and handling missing images for some entries.",
@@ -39,7 +42,7 @@ const projectsData = [
         github_link: "https://github.com/Laufley/Personal_Project_DnD_Vault",
         demo_link: ttrpg_website_demo,
         stack: ["Python", "Flask", "SQL", "HTML", "CSS"],
-        nature: "Individual project",
+        nature: "Solo project",
         duration: "6 days",
         info: "My user is the business owner of a ttrpg club who needs a website to promote his business. He also needs a CRM-ish system to manage the bookings.", 
         challenge: "Creating an all-in-one solution with both public website and private management system on a low budget.",
@@ -65,12 +68,44 @@ const projectsData = [
         github_link: "https://github.com/Laufley/Endangered_animals_DOM_hw_js",
         demo_link: "",
         stack: ["JavaScript", "HTML", "CSS"],
-        nature: "Individual project",
+        nature: "Solo project",
         duration: "2 days",
         info: "To train myself and interact with the DOM directly without jsx and see how things work on the background.",
         challenge: "Learning to manipulate the DOM directly in vanilla JavaScript without React's JSX abstraction.",
         solution: "I like to work on interesting and meaningful projects, so I made the app about Mass extinction events so that our population at scale could be updated of the status of many different species by user input and raise awareness.",
         features: ["Informative content about mass extinction events", "Action form with submit and dropdown", "Species input with name and location", "Dynamic list display", "Delete functionality"],
+    },
+    {
+        title: "Data transformation pipeline (Backend role)",
+        projectImg: conf_agree,
+        stack: ["Go", "Terraform", "AWS Lambda", "AWS S3", "AWS CloudWatch", "AWS DynamoDB", "AWS SQS", "AWS SNS"],
+        nature: "Client project at work",
+        duration: "Joined at the very initial stage of the project",
+        info: "Work-related project. I can not disclose any information about it or the client.",
+        challenge: "To boldly go where no one has gone before",
+        solution: "I collaborated with the team to build a data transformation pipeline in Go. Event-driven architecture. Deployed with Terraform. Used various AWS services to ensure scalability and reliability. Very complex infra spanning different parties on the chain, but we had a fantastic tech lead and senior dev guiding our efforts!",
+        features: ["I worked on every layer (back-end logic, test, infra) ", "I demo-ed frequently to stakeholders", "Extra: I built a complex AWS infrastructure diagram to showcase our team's work to the client", "Extra: I got handpicked to innovate for the client via participating in a dragon's den style presentation proposing a new greenfield project idea", "Happy client :)"],
+    },
+     {
+        title: "Client website (Frontend role)",
+        projectImg: conf_stamp,
+        stack: ["Typescript", "Javascript", "React", "Redux", "HTML", "CSS", "Jest"],
+        nature: "Client project at work",
+        duration: "Joined from private-beta to go-live stages",
+        info: "Work-related project. I can not disclose any information about it or the client.",
+        challenge: "Modernise the old stack and create a new responsive, user-friendly webapp with new features",
+        solution: "I contributed to modernising the repo, implemented new features, managed state with Redux and context, wrote unit tests, and cross-collaborated with design & test teams.",
+        features: ["Moved from JS to TS", "Managed state with Redux", "Created unit tests with Jest", "Built new pages", "Built entire user journeys", "Became the go-to person alongside a colleague to demo for the client and stakeholders", "Happy client :)"],
+    },
+     {
+        title: "Serverless notes app (Fullstack, personal project)",
+        projectImg: notes,
+        stack: ["Typescript", "React", "AWS cdk", "Lambda", "S3", "DynamoDB", "Cloudwatch", "Cloudfront", "APIG", "Cognito + Amplify"],
+        nature: "Solo project",
+        info: "A serverless notes app with authentication that allows the user to manage notes and add files.",
+        challenge: "To work on frontend, backend and infra all by myself. The auth part was the trickiest",
+        solution: "Build apis, used pre-signed urls for the file uploads to S3, and Amplify simplified the Cognito integration for authentication. Deployed the whole infra with AWS cdk in typescript.",
+        features: ["Built my infra diagram", "Built APIs", "Built lambdas", "CRUD operations", "User authentication", "List of notes", "Individual note", "Rich text editor for the note", "Add files to the notes (saved on S3 with pre-signed url)", "2 DynamoDB tables(notes, and files metadata) ", "2 buckets (one for the frontend hosting with Cloudfront, one for the files)"],
     }
 ];
 
