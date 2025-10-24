@@ -50,7 +50,7 @@ function About() {
     {
       front: "Life in Edinburgh",
       back: [
-        "<strong><u>Bad news:</u></strong> The doctorate's salary was too low.",
+        "<strong><u>Bad news:</u></strong> The doctorate's pay was too low.",
         "So I started as a <strong>waitress</strong>.",
         "I changed to <strong>Customer Service Agent</strong> to boost my English.",
         "I got promoted to <strong>Social Media Coord.</strong> - Had my first client meetings!",
