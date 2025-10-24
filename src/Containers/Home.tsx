@@ -1,4 +1,3 @@
-
 import './Home.css';
 import { Link } from 'react-router-dom';
 import profile_pic from '../Components/Assets/profile_pic.jpg';
@@ -9,10 +8,21 @@ import quack_audio from '../Components/Assets/quack1.mp3';
 import ducky from '../Components/Assets/duck.jpeg';
 import Projects from '../Components/Projects';
 import projectsData from '../Data/projectsData';
+import CVFile from '../Components/Assets/my_cv.pdf';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 library.add(fab);
 const profilePic = profile_pic;
 const duck = ducky
+
+const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = CVFile;
+    link.download = 'CV_Indira_Borras.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
 const Home = () => {
   return (
@@ -29,7 +39,9 @@ const Home = () => {
             </p>
             <div className="actions">
               <Link className="btn btn-primary" to="/Projects">View Projects</Link>
-              <Link className="btn btn-secondary" to="/CV">CV</Link>
+              <button className="btn btn-secondary" onClick={handleDownload}>
+                <FontAwesomeIcon icon={faDownload} /> Download CV
+              </button>
             </div>
             <div className="socials desktop-socials">
               <a href="https://github.com/Laufley" target="_blank" rel="noreferrer">
