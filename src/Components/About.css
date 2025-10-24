@@ -185,6 +185,39 @@
   color: #b6db21;
 }
 
+/* "I love" letters */
+#i-love {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Acme', sans-serif;
+  font-size: 4rem;
+  color: var(--text-muted);
+  text-align: center;
+  z-index: 100;
+  margin: 0;
+  width: auto;
+  padding: 10px;
+  background: transparent;
+}
+
+#i-love:hover {
+  cursor: pointer;
+}
+.i-letter:hover  { color: rgb(234,255,0); }
+.l-letter:hover  { color: rgb(249,77,231); }
+.o-letter:hover  { color: rgb(0,85,255); }
+.v-letter:hover  { color: rgb(26,255,0); }
+.e-letter:hover  { color: rgb(255,0,0); }
+.d-letter:hover  { color: rgb(255,0,208); }
+.u-letter:hover  { color: rgb(255,132,0); }
+.c-letter:hover  { color: rgb(0,208,255); }
+.k-letter:hover  { color: rgb(255,145,0); }
+.s-letter:hover  { color: rgb(255,255,0); }
+.excl-letter:hover  { color: rgb(234,0,255); }
+
+
 /* Mobile */
 @media only screen and (max-width: 414px) {
   .cardsAbout-container {
@@ -201,7 +234,7 @@
   .mini-card {
   position: absolute;
   left: 70%;
-  top: 77%;
+  top: 100%;
   transform: translate(-50%, -50%);
   width: 95px;
   height: 60px;
@@ -209,6 +242,10 @@
   z-index: 2;
   cursor: pointer;
   rotate: 10deg;
+  }
+
+  #i-love {
+    display: none;
   }
   
 }

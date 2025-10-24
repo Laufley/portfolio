@@ -132,6 +132,23 @@ function About() {
             </div>
           </div>
         </div>
+        <div className="i-love"> 
+          <div id="i-love">
+            <span className="i-letter">I</span>
+            <span className="space1-letter">&nbsp;</span>
+            <span className="l-letter">l</span>
+            <span className="o-letter">o</span>
+            <span className="v-letter">v</span>
+            <span className="e-letter">e</span>
+            <span className="space2-letter">&nbsp;</span>
+            <span className="d-letter">d</span>
+            <span className="u-letter">u</span>
+            <span className="c-letter">c</span>
+            <span className="k-letter">k</span>
+            <span className="s-letter">s</span>
+            <span className="excl-letter">!</span>
+          </div>
+        </div>
       </div>
     </div>
   );
