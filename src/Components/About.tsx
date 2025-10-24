@@ -50,7 +50,7 @@ function About() {
     {
       front: "Life in Edinburgh",
       back: [
-        "<strong><u>Bad news:</u></strong> The doctorate's pay was too low.",
+        "<strong><u>Bad news:</u></strong> Doctorate's pay was too low.",
         "So I started as a <strong>waitress</strong>.",
         "I changed to <strong>Customer Service Agent</strong> to boost my English.",
         "I got promoted to <strong>Social Media Coord.</strong> - Had my first client meetings!",
@@ -76,10 +76,10 @@ function About() {
     {
       front: "Present, Future & Learnings",
       back: [
-        "<strong><span class='lesson-2'>Present:</span></strong> Have you noticed what all my hobbies have in common? Creation and problem solving. Yes, this is what drives me as a Developer.",
+        "<strong><span class='lesson-2'>Present:</span></strong> Have you noticed what my hobbies have in common? Creation and problem solving. Yes, this is what drives me as a Developer.",
         "<strong><span class='lesson-2'>Future:</span></strong> I'll keep enjoying front-end, back-end and AWS cloud. And I am pursuing a Master's in Software Development to expand my knowledge.",
         "<strong><span class='lesson-2'>Lesson 1:</strong> <span class='lesson-1'>Life is unpredictable. Embrace change.</span>",
-        "<strong><span class='lesson-2'>Lesson 2:</strong> <span class='lesson-1'>The best gamble you can do, is against yourself.</span>",
+        "<strong><span class='lesson-2'>Lesson 2:</strong> <span class='lesson-1'>The best gamble you can do, is on yourself.</span>",
         "<strong><span class='lesson-2'>Lesson 3:</strong> <span class='lesson-1'>We can only make descisions with the information we have at that time... But we can always adjust later.</span>",
         "<strong><span class='lesson-2'>Lesson 4:</strong> <span class='lesson-1'>When life gives you lemons... first check if <span class='lesson-2'><i>lemons != null.</i></span></span>",
       ],
