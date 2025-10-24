@@ -39,21 +39,21 @@ function About() {
     {
       front: "Life in Barcelona",
       back: [
-        "I grew up in a <strong>very impoverished</strong> neighborhood outside BCN.",
+        "I grew up in a <strong>very impoverished</strong> neighborhood outside Barcelona.",
         "An IT career was unheard of (there) by that time.",
         "<strong>High school:</strong> I pursued Bachillerato Científico.",
-        "<strong>Uni:</strong> Worked and studied hard to obtain grants for Clinical Psychology.",
+        "<strong>Uni:</strong> Worked and studied hard to obtain grants for BSc Clinical Psychology.",
         "<strong>The turn point:</strong> I graduated, worked in a hostpital, and discovered how tainted the field was with pharma. I could not morally continue that path.",
-        "<strong>Moved to Edinburgh</strong>: For love, with 200€ in my pocket, and with a earnt contact to do a doctorate programme in Scotland. A new begining!",
+        "<strong>Moved to Edinburgh</strong>: For love, with 200€ in my pocket, and with a hospital's contact to pursue a doctorate in Scotland. A new begining!",
       ],
     },
     {
       front: "Life in Edinburgh",
       back: [
-        "<strong><u>Sour news:</u></strong> Qualified for the doctorate, but the salary would be too low.",
+        "<strong><u>Bad news:</u></strong> Qualified for the doctorate, but the salary was too low.",
         "So I started as a <strong>waitress in a kebab shop</strong>. I had to learn English anyway.",
         "I changed to <strong>Customer Service Agent</strong> to boost my English.",
-        "I got promoted to <strong>Social Media Coord.</strong> – First client meetings!",
+        "I got promoted to <strong>Social Media Coord.</strong> – Had my first client meetings!",
         "I wanted to grow. By then, I knew about IT as a career, but I didn't have the education. I wish I had. But I touched the field as <strong>IT Recruiter</strong>.",
         "I got promoted to Senior. I also helped to design our website and logo! ;)",
         "But I got jealous of the dev's skills and their power of creation. So I did a bootcamp. Again, investing all my savings. It changed EVERYTHING!",
