@@ -43,7 +43,7 @@ function About() {
         "An IT career was unheard of (there) by that time.",
         "<strong>High school:</strong> I pursued Bachillerato Científico.",
         "<strong>Uni:</strong> Worked and studied hard to obtain grants for BSc Clinical Psychology.",
-        "<strong>The turn point:</strong> I graduated, worked in a hostpital, and discovered how tainted the field was with pharma. I could not morally continue that path.",
+        "<strong>The turn point:</strong> I graduated, worked in a hospital, and discovered how tainted the field was with pharma. I could not morally continue that path.",
         "<strong>Moved to Edinburgh</strong>: For love, with 200€ in my pocket, and with a hospital's contact to pursue a doctorate in Scotland. A new begining!",
       ],
     },
