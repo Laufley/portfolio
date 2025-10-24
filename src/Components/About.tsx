@@ -53,7 +53,7 @@ function About() {
         "<strong><u>Bad news:</u></strong> The doctorate's salary was too low.",
         "So I started as a <strong>waitress</strong>.",
         "I changed to <strong>Customer Service Agent</strong> to boost my English.",
-        "I got promoted to <strong>Social Media Coord.</strong> – Had my first client meetings!",
+        "I got promoted to <strong>Social Media Coord.</strong> - Had my first client meetings!",
         "I wanted to grow. By then, I knew about IT as a career, but I didn't have the education. I wish I had. But I touched the field as <strong>IT Recruiter</strong>.",
         "I got promoted to Senior. I also helped to design our website and logo! ;)",
         "But I got jealous of the dev's skills and their power of creation. So I did a bootcamp. Again, investing all my savings. It changed EVERYTHING!",
