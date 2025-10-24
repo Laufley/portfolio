@@ -5,9 +5,7 @@ import game from '../Components/Assets/children_of_the_bookcase.jpeg'
 import animals from '../Components/Assets/species.jpeg'
 import kraken_demo from '../Components/Assets/kraken_smol_demo.mp4'
 import ttrpg_website_demo from '../Components/Assets/ttrpg_website_with_crm_demo.mp4'
-import conf_agree from '../Components/Assets/conf_agree.jpg'
 import conf_stamp from '../Components/Assets/conf_stamp.jpg'
-import conf_red from '../Components/Assets/conf_red.png'
 
 const projectsData = [
     {
@@ -77,7 +75,7 @@ const projectsData = [
     },
     {
         title: "Data transformation pipeline (Backend role)",
-        projectImg: conf_agree,
+        projectImg: conf_stamp,
         stack: ["Go", "Terraform", "AWS Lambda", "AWS S3", "AWS CloudWatch", "AWS DynamoDB", "AWS SQS", "AWS SNS"],
         nature: "Client project at work",
         duration: "Joined at the very initial stage of the project",
@@ -99,7 +97,7 @@ const projectsData = [
     },
      {
         title: "Serverless notes app (Fullstack, solo project)",
-        projectImg: conf_red,
+        projectImg: conf_stamp,
         stack: ["Typescript", "React", "AWS cdk", "Lambda", "S3", "DynamoDB", "Cloudwatch", "Cloudfront", "APIG", "Cognito + Amplify"],
         nature: "Solo project - but built with the company laptop so it counts as work-related. Confidential ^^'",
         info: "A serverless notes app with authentication, notes saving on Dynamodb, files uploads, and rich text editor using AWS cdk and services.",
