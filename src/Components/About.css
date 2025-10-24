@@ -65,7 +65,7 @@
 }
 
 .cardAbout-back {
-  background-color: #4653e2;
+  background-color: #5058b1;
   color: white;
   transform: rotateY(180deg);
 }
@@ -178,11 +178,11 @@
 
 /* Add these new styles */
 .lesson-1 {
-  color: #ffd700;
+  color: #f8e263;
 }
 
 .lesson-2 {
-  color: #f6901a;
+  color: #b6db21;
 }
 
 /* Mobile */
