@@ -226,6 +226,7 @@
   background: var(--btn-primary);
   color: #333335;
   box-shadow: 0 10px 20px var(--btn-primary-shadow);
+  border: none;
 }
 
 .btn-secondary:hover {
