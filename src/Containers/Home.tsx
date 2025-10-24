@@ -8,7 +8,7 @@ import quack_audio from '../Components/Assets/quack1.mp3';
 import ducky from '../Components/Assets/duck.jpeg';
 import Projects from '../Components/Projects';
 import projectsData from '../Data/projectsData';
-import CVFile from '../Components/Assets/my_cv.pdf';
+import CVFile from '../Components/Assets/CV_indira_2025.pdf';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 library.add(fab);
