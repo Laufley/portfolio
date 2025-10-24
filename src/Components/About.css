@@ -60,12 +60,12 @@
 }
 
 .cardAbout-front {
-  background-color: #f8f9fa;
+  background-color: #99f6ef;
   color: #333;
 }
 
 .cardAbout-back {
-  background-color: #007bff;
+  background-color: #4653e2;
   color: white;
   transform: rotateY(180deg);
 }
@@ -190,7 +190,7 @@
   .cardsAbout-container {
     grid-template-columns: 1fr;
     gap: 4rem;
-    padding: 0 1rem;
+    padding: 1rem 0rem;
   }
 
   .cardAbout {
