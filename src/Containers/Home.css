@@ -99,30 +99,6 @@
   border-radius: 70px;
 }
 
-/* "I love" letters */
-/* #i-love{
-  margin-left: 13rem;
-  font-family: 'Acme', sans-serif;
-  font-size: 30px;
-  color: var(--text-muted);
-}
-
-.i-letter:hover  { color: rgb(234,255,0); }
-.l-letter:hover  { color: rgb(249,77,231); }
-.o-letter:hover  { color: rgb(0,85,255); }
-.v-letter:hover  { color: rgb(26,255,0); }
-.e-letter:hover  { color: rgb(255,0,0); }
-.c-letter:hover  { color: rgb(255,0,208); }
-.r-letter:hover  { color: rgb(255,132,0); }
-.a-letter:hover  { color: rgb(0,208,255); }
-.t-letter:hover  { color: rgb(255,145,0); }
-.n-letter:hover  { color: rgb(255,255,0); }
-.g-letter:hover  { color: rgb(234,0,255); }
-.s-letter:hover  { color: rgb(3,162,231); }
-.u-letter:hover  { color: rgb(255,0,221); }
-.f1-letter:hover { color: rgb(64,255,0); }
-.f2-letter:hover { color: rgb(0,21,255); } */
-
 /* helper classes */
 .card {
   position: relative;
