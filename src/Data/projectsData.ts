@@ -74,7 +74,7 @@ const projectsData = [
         features: ["Informative content about mass extinction events", "Action form with submit and dropdown", "Species input with name and location", "Dynamic list display", "Delete functionality"],
     },
     {
-        title: "Data transformation pipeline (Backend role)",
+        title: "Data transformation pipeline (Backend)",
         projectImg: conf_stamp,
         stack: ["Go", "Terraform", "AWS Lambda", "AWS S3", "AWS CloudWatch", "AWS DynamoDB", "AWS SQS", "AWS SNS"],
         nature: "Client project at work",
@@ -85,7 +85,7 @@ const projectsData = [
         features: ["I worked on every layer (back-end logic, test, infra) ", "I demo-ed frequently to stakeholders", "Extra: I built a complex AWS infrastructure diagram to showcase our team's work to the client", "Extra: I got handpicked to innovate for the client via participating in a dragon's den style presentation proposing a new greenfield project idea", "Made friends along the way", "Happy client :)"],
     },
      {
-        title: "Client website (Frontend role)",
+        title: "Client Live website revamp (Frontend)",
         projectImg: conf_stamp,
         stack: ["Typescript", "Javascript", "React", "Redux", "HTML", "CSS", "Jest"],
         nature: "Client project at work",
@@ -99,11 +99,22 @@ const projectsData = [
         title: "Serverless notes app (Fullstack, solo project)",
         projectImg: conf_stamp,
         stack: ["Typescript", "React", "AWS cdk", "Lambda", "S3", "DynamoDB", "Cloudwatch", "Cloudfront", "APIG", "Cognito + Amplify"],
-        nature: "Solo project - but built with the company laptop so it counts as work-related. Confidential ^^'",
+        nature: "Solo project - but built with the company laptop so it counts as work-related. Confidential.",
         info: "A serverless notes app with authentication, notes saving on Dynamodb, files uploads, and rich text editor using AWS cdk and services - CONFIDENTIAL because I worked on it with my work laptop",
         challenge: "To work on frontend, backend and infra all by myself. Learning AWS cdk from scratch.",
         solution: "Build apis, back-end logic, front-end components, file-uploads in quite a clever way, a cool integration for authentication, and rich text editor for the notes. Deployed the whole infra with AWS cdk in typescript.",
         features: ["Built my infra diagram", "Built APIs", "Built lambdas", "CRUD operations", "User authentication", "List of notes", "Individual note", "Rich text editor for the note", "Add files to the notes", "Store different types of data"],
+    },
+     {
+        title: "Maintenance & feature development for a Live service serving millions (Fullstack)",
+        projectImg: conf_stamp,
+        stack: ["Typescript", "React", "Redux", "Java", "Spring Boot", "Jenkins", "Docker", "Kubernetes"],
+        nature: "Client project at work",
+        duration: "My current project. Joined in Oct, 2025.",
+        info: "Work-related project. I can't disclose information about the project or the client. But you can check some generic details below.",
+        challenge: "The app is being used daily by millions of people and we opearate as a conjunction of services in multiple repositories. It started as a Front-end role on 3 repositories to develop new features, modernise and fix bugs. But it evolved into a fullstack role across 6 repositories and 2 teams, plust assisting the L3 team when they raise prod issues which have priority. And I've also taken ownership of CVE tracking and collaborating with the Delivery Manager to target their respective releases.",
+        solution: "Build new components, fix highly complex user journeys, solve critical vulnerabilities for maintenability, track, document, collaborate with many other teams and services.",
+        features: ["Worked across 4 environments and 6 repos", "Heavy refactoring", "Fixed 43+ user journeys – in just one ticket", "Created new features", "Tracked CVEs, created documentation for them, rose their Jira tickets, clubbed them together by common fixes, and joined the DM to target their relesases", "Documented the release process for better team understanding"],
     }
 ];
 
