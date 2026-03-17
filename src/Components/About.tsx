@@ -80,13 +80,16 @@ function About() {
         "<strong><span class='lesson-2'>Present:</span></strong> Problem-solving and creation are what drive me as a developer. I will never get tired of it. It's what all my hobbies have in common!",
         "<strong><span class='lesson-2'>Future:</span></strong> I'll keep enjoying my job and expand on AWS. I am also pursuing a Master's in Software Development to extend my knowledge.",
         "<strong><span class='lesson-2'>Learnings:</span></strong>",
-        "<strong><span class='lesson-1'> 1:</strong> Life is unpredictable. Embrace change.",
-        "<strong><span class='lesson-1'> 2:</strong> We can only make descisions with the information we have at that time... But we can always adjust later.</span>",
-        "<strong><span class='lesson-1'> 3:</strong> The best gamble you can do, is on yourself.</span>",
-        "<strong><span class='lesson-1'> 4:</strong>W hen life gives you lemons... first check if <span class='lesson-2'><i>lemons != null.</i></span></span>",
       ],
     },
   ];
+
+  const learnings = [
+     "<strong><span class='lesson-1'> 1:</strong> Life is unpredictable. Embrace change.",
+        "<strong><span class='lesson-1'> 2:</strong> We can only make descisions with the information we have at that time... But we can always adjust later.</span>",
+        "<strong><span class='lesson-1'> 3:</strong> The best gamble you can do, is on yourself.</span>",
+        "<strong><span class='lesson-1'> 4:</strong>W hen life gives you lemons... first check if <span class='lesson-2'><i>lemons != null.</i></span></span>",
+  ]
 
   const renderListItem = (text: string) => {
     // Line below is what allows HTML rendering inside list items omg!!
@@ -107,16 +110,23 @@ function About() {
                 <h2>{card.front}</h2>
               </div>
               <div className="cardAbout-back">
-                {Array.isArray(card.back) ? (
-                  <ul>
-                    {card.back.map((item, i) => (
-                      <li key={i}>{renderListItem(item)}</li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p>{card.back}</p>
-                )}
-              </div>
+              {Array.isArray(card.back) ? (
+                <ul>
+                  {card.back.map((item, i) => (
+                    <li key={i}>{renderListItem(item)}</li>
+                  ))}
+                  {index === 3 && (
+                    <ul>
+                      {learnings.map((learning, j) => (
+                        <li key={j}>{renderListItem(learning)}</li>
+                      ))}
+                    </ul>
+                  )}
+                </ul>
+              ) : (
+                <p>{card.back}</p>
+              )}
+            </div>
             </div>
           </div>
         ))}
