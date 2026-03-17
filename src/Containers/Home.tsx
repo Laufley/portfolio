@@ -8,7 +8,7 @@ import quack_audio from '../Components/Assets/quack1.mp3';
 import ducky from '../Components/Assets/duck.jpeg';
 import Projects from '../Components/Projects';
 import projectsData from '../Data/projectsData';
-import CVFile from '../Components/Assets/CV_indira_2025.pdf';
+import CVFile from '../Components/Assets/cv_indira_borras_2026.pdf';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 library.add(fab);
@@ -52,7 +52,7 @@ const Home = () => {
               </a>
             </div>
             <div className="skills desktop-skills">
-              {['Typescript', 'Javascript','Go','Python','Java','React','Redux','Terraform', 'AWS cdk', 'AWS services', 'CI/CD', 'Jest'].map(s => (
+              {['Typescript', 'Javascript','Go','Python','React','Redux','Terraform', 'AWS cdk', 'AWS services', 'CI/CD', 'Jest'].map(s => (
                 <span className="chip" key={s}>{s}</span>
               ))}
             </div>
