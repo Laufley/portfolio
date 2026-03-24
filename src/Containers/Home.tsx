@@ -18,7 +18,7 @@ const duck = ducky
 const handleDownload = () => {
     const link = document.createElement('a');
     link.href = CVFile;
-    link.download = 'CV_Indira_Borras.pdf';
+    link.download = 'cv_indira_borras_2026.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
