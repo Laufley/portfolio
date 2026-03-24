@@ -8,7 +8,7 @@ import quack_audio from '../Components/Assets/quack1.mp3';
 import ducky from '../Components/Assets/duck.jpeg';
 import Projects from '../Components/Projects';
 import projectsData from '../Data/projectsData';
-import CVFile from '../Components/Assets/cv_indira_borras_2026.pdf';
+import CVFile from '../Components/Assets/cv_indira_borras_gonzalez_2026.pdf';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 library.add(fab);
@@ -18,7 +18,7 @@ const duck = ducky
 const handleDownload = () => {
     const link = document.createElement('a');
     link.href = CVFile;
-    link.download = 'cv_indira_borras_2026.pdf';
+    link.download = 'cv_indira_borras_gonzalez_2026.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
